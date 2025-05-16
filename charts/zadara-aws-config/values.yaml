@@ -5,7 +5,7 @@ default:
   signingRegion: "us-east-1"
 
 # -- Default root endpoint
-endpointUrl: "https://compute-bbtower-01.flex-n.jp"
+endpointUrl: "https://compute-il-interoplab-01.zadara.com"
 
 # -- cloud.conf `[Global]` stanza
 global: {}
