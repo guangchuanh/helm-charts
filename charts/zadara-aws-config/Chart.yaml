@@ -4,9 +4,9 @@ version: 0.0.1
 # home: "https://github.com/zadarastorage/helm-charts/tree/main/charts/zadara-aws-config"
 # sources:
 #   - "https://github.com/zadarastorage/helm-charts/tree/main/charts/zadara-aws-config"
-home: "https://github.com/guangchuanh/zadara-helm-charts/tree/main/charts/zadara-aws-config"
+home: "https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config"
 sources:
-  - "https://github.com/guangchuanh/zadara-helm-charts/tree/main/charts/zadara-aws-config"
+  - "https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config"
 description: Adds ConfigMaps to adapt Kubernetes services from AWS endpoints to use zCompute endpoints
 dependencies: []
 maintainers:
