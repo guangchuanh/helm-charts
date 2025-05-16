@@ -5,7 +5,7 @@ appVersion: "v0.24.0"
 description: Gen-AI Chat for Teams - Think ChatGPT if it had access to your team's unique knowledge.
 home: https://www.onyx.app/
 sources:
-  - "https://github.com/zadarastorage/helm-charts/blob/main/charts/onyx"
+  - "https://github.com/guangchuanh/helm-charts/blob/main/charts/onyx"
   - "https://github.com/onyx-dot-app/onyx"
 maintainers:
   - name: eric-zadara
@@ -22,7 +22,7 @@ dependencies:
     condition: cnpg.enabled
   - name: vespa-ai
     version: 0.0.2
-    repository: https://zadarastorage.github.io/helm-charts
+    repository: https://guangchuan.github.io/helm-charts
     #repository: "file://../vespa-ai"
     alias: vespa
     condition: vespa.enabled
