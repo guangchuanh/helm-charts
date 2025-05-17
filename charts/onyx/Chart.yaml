@@ -22,7 +22,7 @@ dependencies:
     condition: cnpg.enabled
   - name: vespa-ai
     version: 0.0.2
-    repository: https://guangchuan.github.io/helm-charts
+    repository: https://guangchuanh.github.io/helm-charts
     #repository: "file://../vespa-ai"
     alias: vespa
     condition: vespa.enabled
