@@ -1,0 +1,77 @@
+# -- Override name used for vespa resources
+nameOverride: ""
+
+images:
+  vespa:
+    repository: 'vespaengine/vespa'
+    tag: "8.417.13"
+
+configMap:
+  # -- Env Vars applied to all STS/Pods
+  env:
+    VESPA_CONFIGSERVER_JVMARGS: "-Xms32M -Xmx128M"
+    VESPA_CONFIGPROXY_JVMARGS: "-Xms32M -Xmx32M"
+
+podMonitor:
+  # -- Enable podMonitor
+  enabled: false
+  additionalLabels:
+    release: victoria-metrics-k8s-stack
+  endpoints:
+    - port: '19092'
+      path: /prometheus/v1/values
+      interval: 60s
+
+statefulSets:
+  single:
+    # -- Enable the "single" preconfigured statefulset
+    enabled: false
+    # -- Vespa startup args. `configserver` is necessary for a vespa configserver. `services` is necessary for slobroks and/or content.
+    args: ['configserver,services']
+    replicaCount: 1
+    ports:
+      - '19071'
+      - '8081'
+    volumes:
+      var:
+        path: '/opt/vespa/var'
+        size: 50Gi
+        className: gp2
+        accessModes: ["ReadWriteOnce"]
+    resources:
+      limits:
+        cpu: "5"
+        memory: "14Gi"
+      requests:
+        cpu: "3"
+        memory: "10Gi"
+
+  cfg:
+    # -- Enable the "cfg" preconfigured statefulset
+    enabled: false
+    # -- Vespa startup args. `configserver` is necessary for a vespa configserver. `services` is necessary for slobroks and/or content.
+    args: ['configserver,services']
+    # -- Set replica count for this statefulset
+    replicaCount: 3
+    ports:
+      - '19071'
+    volumes:
+      var:
+        path: '/opt/vespa/var'
+        size: 10Gi
+        className: gp2
+        accessModes: ["ReadWriteOnce"]
+  content:
+    # -- Enable the "content" preconfigured statefulset
+    enabled: false
+    # -- Vepsa startup args. `services` alone is necessary for content nodes.
+    args: ['services']
+    replicaCount: 3
+    ports:
+      - '8081'
+    volumes:
+      var:
+        path: '/opt/vespa/var'
+        size: 10Gi
+        className: gp2
+        accessModes: ["ReadWriteOnce"]

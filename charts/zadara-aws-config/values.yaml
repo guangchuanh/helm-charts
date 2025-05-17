@@ -1,0 +1,22 @@
+default:
+  # -- Default region string
+  region: "us-east-1"
+  # -- Default region string used for signing
+  signingRegion: "us-east-1"
+
+# -- Default root endpoint
+endpointUrl: "https://compute-il-interoplab-01.zadara.com"
+
+# -- cloud.conf `[Global]` stanza
+global: {}
+
+serviceOverrides:
+  # -- ec2-specific configurations, overrides anything from `default`
+  ec2:
+    Url: "{{ .Values.endpointUrl }}/api/v2/aws/ec2"
+  # -- autoscaling-specific configurations, overrides anything from `default`
+  autoscaling:
+    Url: "{{ .Values.endpointUrl }}/api/v2/aws/autoscaling"
+  # -- elasticloadbalancing-specific configurations, overrides anything from `default`
+  elasticloadbalancing:
+    Url: "{{ .Values.endpointUrl }}/api/v2/aws/elbv2"
