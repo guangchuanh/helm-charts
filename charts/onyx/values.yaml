@@ -155,22 +155,22 @@ inference:
   replicaCount: 1
   updateStrategy:
     type: "Recreate"
-  runtimeClassName: nvidia
+  # runtimeClassName: nvidia
   resources:
     # -- Resource limits for inference pods
     # @section -- Resources
-    limits:
-      nvidia.com/gpu: "4"
+    # limits:
+    #  nvidia.com/gpu: "4"
     # -- Resource requests for inference pods
     # @section -- Resources
     requests:
       cpu: "0.1"
       memory: "2Gi"
-      nvidia.com/gpu: "4"
+    #  nvidia.com/gpu: "4"
   extraVolumes: []
   extraVolumeMounts: []
-  tolerations:
-    - { effect: "NoSchedule", operator: "Exists", key: "nvidia.com/gpu" }
+  # tolerations:
+  #   - { effect: "NoSchedule", operator: "Exists", key: "nvidia.com/gpu" }
   affinity: {}
 
 index:
@@ -180,22 +180,22 @@ index:
   replicaCount: 1
   updateStrategy:
     type: "Recreate"
-  runtimeClassName: nvidia
+  # runtimeClassName: nvidia
   resources:
     # -- Resource limits for index pods
     # @section -- Resources
-    limits:
-      nvidia.com/gpu: "4"
+    # limits:
+    #   nvidia.com/gpu: "4"
     # -- Resource requests for index pods
     # @section -- Resources
     requests:
       cpu: "0.1"
       memory: "2Gi"
-      nvidia.com/gpu: "4"
+    #   nvidia.com/gpu: "4"
   extraVolumes: []
   extraVolumeMounts: []
-  tolerations:
-    - { effect: "NoSchedule", operator: "Exists", key: "nvidia.com/gpu" }
+  # tolerations:
+  #   - { effect: "NoSchedule", operator: "Exists", key: "nvidia.com/gpu" }
   affinity: {}
 
 vespa:
