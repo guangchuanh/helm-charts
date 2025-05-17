@@ -22,7 +22,8 @@ dependencies:
     condition: cnpg.enabled
   - name: vespa-ai
     version: 0.0.2
-    repository: https://zadarastorage.github.io/helm-charts
+    #repository: https://zadarastorage.github.io/helm-charts
+    repository: https://unoplat.github.io/vespa-helm-charts
     #repository: "file://../vespa-ai"
     alias: vespa
     condition: vespa.enabled
