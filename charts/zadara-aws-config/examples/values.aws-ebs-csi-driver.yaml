@@ -12,21 +12,21 @@ sidecars:
       - --timeout=120s
       - --retry-interval-start=10s
 storageClasses:
-  - name: gp3
+  - name: gp2
     volumeBindingMode: WaitForFirstConsumer
     allowVolumeExpansion: true
     parameters:
-      type: gp3
+      type: gp2
       tagSpecification_1: "Name={{ .PVName }}"
     mountOptions:
       - errors=panic
     annotations:
       storageclass.kubernetes.io/is-default-class: true
 volumeSnapshotClasses:
-  - name: gp3
+  - name: gp2
     deletionPolicy: Delete
     parameters:
-      type: gp3
+      type: gp2
       tagSpecification_1: "Name={{ .PVName }}"
     annotations:
       storageclass.kubernetes.io/is-default-class: true
