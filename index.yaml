@@ -1,9 +1,17 @@
 apiVersion: v1
 entries:
+  k3s-helmchartconfig:
+  - apiVersion: v2
+    created: "2025-05-21T19:05:43.416909+09:00"
+    digest: 9d4d577126477558a28caba32bd604605fa0fa92cc997bf6b34b43b81a106a14
+    name: k3s-helmchartconfig
+    urls:
+    - https://guangchuanh.github.io/helm-charts/charts/k3s-helmchartconfig-0.0.2.tgz
+    version: 0.0.2
   onyx:
   - apiVersion: v2
     appVersion: v0.24.0
-    created: "2025-05-17T20:52:15.340726+09:00"
+    created: "2025-05-21T19:05:43.425027+09:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -17,11 +25,11 @@ entries:
     - alias: vespa
       condition: vespa.enabled
       name: vespa-ai
-      repository: https://zadarastorage.github.io/helm-charts
+      repository: https://unoplat.github.io/vespa-helm-charts
       version: 0.0.2
     description: Gen-AI Chat for Teams - Think ChatGPT if it had access to your team's
       unique knowledge.
-    digest: 2d981d818c99a74c9672fb3ccdb7b00478a1ed079b7eefa274a45138d408cfe8
+    digest: 142250c9687a0e45a066293f09e1868515bf09b57c8cec3ae215179ad0247368
     home: https://www.onyx.app/
     maintainers:
     - name: eric-zadara
@@ -35,18 +43,18 @@ entries:
     version: 0.0.13
   vespa-ai:
   - apiVersion: v2
-    created: "2025-05-17T20:52:15.341084+09:00"
-    digest: ca0ea810b4f262ec9cdaff4140c2e3c454766b4c857bdb681ed9aba9a7b45df3
+    created: "2025-05-21T19:05:43.425385+09:00"
+    digest: 8098000ae832168fd36a65f112de758d160125375d6ad502cf2851d52338d091
     name: vespa-ai
     urls:
     - https://guangchuanh.github.io/helm-charts/charts/vespa-ai-0.0.2.tgz
     version: 0.0.2
   zadara-aws-config:
   - apiVersion: v2
-    created: "2025-05-17T20:52:15.341355+09:00"
+    created: "2025-05-21T19:05:43.425653+09:00"
     description: Adds ConfigMaps to adapt Kubernetes services from AWS endpoints to
       use zCompute endpoints
-    digest: 7f526988ecf7bcee7fb9b06a41157d40f158c68a3933f4a8c8c3a5fe7d05a8ed
+    digest: edff8bad54918250c9d5b6e4b1f6379699beaec5160ee93a9313cfee40828580
     home: https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config
     maintainers:
     - name: eric-zadara
@@ -57,4 +65,4 @@ entries:
     urls:
     - https://guangchuanh.github.io/helm-charts/charts/zadara-aws-config-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-17T20:52:15.331842+09:00"
+generated: "2025-05-21T19:05:43.416607+09:00"
