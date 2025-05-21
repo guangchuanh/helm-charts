@@ -1,5 +1,8 @@
 *.swp
 Chart.lock
 charts/**/charts
+<<<<<<< HEAD
 *.tgz
 
+=======
+>>>>>>> main

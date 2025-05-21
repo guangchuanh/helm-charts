@@ -10,7 +10,6 @@ enableShield: false
 enableWaf: false
 enableWafv2: false
 awsApiEndpoints: "ec2=https://compute-il-interoplab-01.zadara.com/api/v2/aws/ec2,elasticloadbalancing=https://compute-il-interoplab-01.zadara.com/api/v2/aws/elbv2,acm=https://compute-il-interoplab-01.zadara.com/api/v2/aws/acm,sts=https://compute-il-interoplab-01.zadara.com/api/v2/aws/sts"
-# In some edge cases, cloud.zadara.com may need to be changed for your particular site.
 tolerations:
   - key: ""
     effect: NoSchedule
