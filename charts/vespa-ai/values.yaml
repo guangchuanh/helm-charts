@@ -36,7 +36,7 @@ statefulSets:
       var:
         path: '/opt/vespa/var'
         size: 50Gi
-        className: gp2
+        className: gp3
         accessModes: ["ReadWriteOnce"]
     resources:
       limits:
@@ -59,7 +59,7 @@ statefulSets:
       var:
         path: '/opt/vespa/var'
         size: 10Gi
-        className: gp2
+        className: gp3
         accessModes: ["ReadWriteOnce"]
   content:
     # -- Enable the "content" preconfigured statefulset
@@ -73,5 +73,5 @@ statefulSets:
       var:
         path: '/opt/vespa/var'
         size: 10Gi
-        className: gp2
+        className: gp3
         accessModes: ["ReadWriteOnce"]
