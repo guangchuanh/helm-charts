@@ -168,7 +168,7 @@ spec:
         resources:
           requests:
             storage: {{ default "10Gi" $volData.size }}
-        storageClassName: {{ default "gp2" $volData.className }}
+        storageClassName: {{ default "gp3" $volData.className }}
 {{- end }}
 {{- end }}
 {{- end }}
