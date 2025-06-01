@@ -2,16 +2,24 @@ apiVersion: v1
 entries:
   cert-manager-clusterissuers:
   - apiVersion: v2
-    created: "2025-06-02T06:52:11.131185+09:00"
-    digest: ac33e5440f4341cad57063d8f4ebe92f76ab45805d265447ff55c16100b0d652
+    created: "2025-06-02T07:59:34.410186+09:00"
+    digest: 47912501106be5ff8ae306ae3e159adb7f0f7f6c24981a384a38e5967ed1957c
     name: cert-manager-clusterissuers
     urls:
-    - https://guangchuanh.github.io/helm-charts/charts/cert-manager-clusterissuers-0.0.1.tgz
+    - https://guangchuanh.github.io/helm-charts/cert-manager-clusterissuers-0.0.1.tgz
     version: 0.0.1
+  k3s-helmchartconfig:
+  - apiVersion: v2
+    created: "2025-06-02T07:59:34.41039+09:00"
+    digest: 321f8d58c4873cd3c08391e577c5b8bfba22567bbea5bd8b348796981efef134
+    name: k3s-helmchartconfig
+    urls:
+    - https://guangchuanh.github.io/helm-charts/k3s-helmchartconfig-0.0.2.tgz
+    version: 0.0.2
   onyx:
   - apiVersion: v2
     appVersion: v0.24.0
-    created: "2025-06-02T06:52:11.140776+09:00"
+    created: "2025-06-02T07:59:34.419091+09:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -29,7 +37,7 @@ entries:
       version: 0.0.2
     description: Gen-AI Chat for Teams - Think ChatGPT if it had access to your team's
       unique knowledge.
-    digest: 65c6c8c861a310f670b03076475888a5a20c1bd8aad672fcb03727b44f452d04
+    digest: e21cfc8e79b0446bff55142703207b5c27e30cbce0540a7e483b21b9d5bffc5f
     home: https://www.onyx.app/
     maintainers:
     - name: eric-zadara
@@ -39,22 +47,22 @@ entries:
     - https://github.com/guangchuanh/helm-charts/blob/main/charts/onyx
     - https://github.com/onyx-dot-app/onyx
     urls:
-    - https://guangchuanh.github.io/helm-charts/charts/onyx-0.0.13.tgz
+    - https://guangchuanh.github.io/helm-charts/onyx-0.0.13.tgz
     version: 0.0.13
   vespa-ai:
   - apiVersion: v2
-    created: "2025-06-02T06:52:11.141203+09:00"
-    digest: 8390b39f668296947e2d1c28eec451528b4ac056f790d4ffdfd3f862f41a0fc3
+    created: "2025-06-02T07:59:34.419447+09:00"
+    digest: 8d17b750eab2fdca9bd83b9b9bb5ea53500322c112d381dc66983a47c0f0898e
     name: vespa-ai
     urls:
-    - https://guangchuanh.github.io/helm-charts/charts/vespa-ai-0.0.2.tgz
+    - https://guangchuanh.github.io/helm-charts/vespa-ai-0.0.2.tgz
     version: 0.0.2
   zadara-aws-config:
   - apiVersion: v2
-    created: "2025-06-02T06:52:11.141569+09:00"
+    created: "2025-06-02T07:59:34.419748+09:00"
     description: Adds ConfigMaps to adapt Kubernetes services from AWS endpoints to
       use zCompute endpoints
-    digest: a6f93e2098ab1657d1547d2a040e6108ae02a6529e2e78832d8f9dc1549654ac
+    digest: 1630c0e8f902bb6c53f920b26efadaaff83d4e654042da6d849b2cf99a29657c
     home: https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config
     maintainers:
     - name: eric-zadara
@@ -63,6 +71,6 @@ entries:
     sources:
     - https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config
     urls:
-    - https://guangchuanh.github.io/helm-charts/charts/zadara-aws-config-0.0.1.tgz
+    - https://guangchuanh.github.io/helm-charts/zadara-aws-config-0.0.1.tgz
     version: 0.0.1
-generated: "2025-06-02T06:52:11.130782+09:00"
+generated: "2025-06-02T07:59:34.409794+09:00"
