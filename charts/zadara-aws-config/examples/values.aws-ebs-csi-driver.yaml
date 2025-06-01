@@ -16,7 +16,7 @@ storageClasses:
     volumeBindingMode: WaitForFirstConsumer
     allowVolumeExpansion: true
     parameters:
-      type: gp3
+      type: gp2
       tagSpecification_1: "Name={{ .PVName }}"
     mountOptions:
       - errors=panic
