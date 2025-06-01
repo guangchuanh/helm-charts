@@ -6,12 +6,31 @@ metadata:
 data:
   cloud.conf: |
     [Global]
-    Zone={{ tpl (default $.Values.default.region $.Values.global.region) $ }}
-{{- range $svc, $cfg := $.Values.serviceOverrides }}
+    Zone=us-east-1
 
-    [ServiceOverride "{{ $svc }}"]
-    Service={{ $svc }}
-    Region={{ tpl (default $.Values.default.region $cfg.region) $ }}
-    SigningRegion={{ tpl (default $.Values.default.signingRegion $cfg.signingRegion) $ }}
-    URL={{ tpl $cfg.Url $ }}
-{{- end }}
+    [ServiceOverride "autoscaling"]
+    Service=autoscaling
+    Region=us-east-1
+    SigningRegion=us-east-1
+    URL="{{ .Values.endpointUrl }}/api/v2/aws/autoscaling"
+
+    [ServiceOverride "ec2"]
+    Service=ec2
+    Region=us-east-1
+    SigningRegion=us-east-1
+    URL="{{ .Values.endpointUrl }}/api/v2/aws/ec2"
+
+    [ServiceOverride "elasticloadbalancing"]
+    Service=elasticloadbalancing
+    Region=us-east-1
+    SigningRegion=us-east-1
+    URL="{{ .Values.endpointUrl }}/api/v2/aws/elbv2"
+#    Zone={{ tpl (default $.Values.default.region $.Values.global.region) $ }}
+#{{- range $svc, $cfg := $.Values.serviceOverrides }}
+#
+#    [ServiceOverride "{{ $svc }}"]
+#    Service={{ $svc }}
+#    Region={{ tpl (default $.Values.default.region $cfg.region) $ }}
+#    SigningRegion={{ tpl (default $.Values.default.signingRegion $cfg.signingRegion) $ }}
+#    URL={{ tpl $cfg.Url $ }}
+#{{- end }}
