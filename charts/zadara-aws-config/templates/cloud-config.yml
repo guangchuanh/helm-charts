@@ -5,23 +5,23 @@ metadata:
   name: cloud-config
 data:
   cloud.conf: |
-  [Global]
-  Zone=us-east-1
+    [Global]
+    Zone=us-east-1
 
-  [ServiceOverride "autoscaling"]
-  Service=autoscaling
-  Region=us-east-1
-  SigningRegion=us-east-1
-  URL="{{ .Values.endpointUrl }}/api/v2/aws/autoscaling"
+    [ServiceOverride "autoscaling"]
+    Service=autoscaling
+    Region=us-east-1
+    SigningRegion=us-east-1
+    URL="{{ .Values.endpointUrl }}/api/v2/aws/autoscaling"
 
-  [ServiceOverride "ec2"]
-  Service=ec2
-  Region=us-east-1
-  SigningRegion=us-east-1
-  URL="{{ .Values.endpointUrl }}/api/v2/aws/ec2"
+    [ServiceOverride "ec2"]
+    Service=ec2
+    Region=us-east-1
+    SigningRegion=us-east-1
+    URL="{{ .Values.endpointUrl }}/api/v2/aws/ec2"
 
-  [ServiceOverride "elasticloadbalancing"]
-  Service=elasticloadbalancing
-  Region=us-east-1
-  SigningRegion=us-east-1
-  URL="{{ .Values.endpointUrl }}/api/v2/aws/elbv2"
+    [ServiceOverride "elasticloadbalancing"]
+    Service=elasticloadbalancing
+    Region=us-east-1
+    SigningRegion=us-east-1
+    URL="{{ .Values.endpointUrl }}/api/v2/aws/elbv2"
