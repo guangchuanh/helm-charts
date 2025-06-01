@@ -9,7 +9,7 @@ ingressClassConfig:
 enableShield: false
 enableWaf: false
 enableWafv2: false
-awsApiEndpoints: "ec2=https://compute-il-interoplab-01.zadara.com/api/v2/aws/ec2,elasticloadbalancing=https://compute-il-interoplab-01.zadara.com/api/v2/aws/elbv2,acm=https://compute-il-interoplab-01.zadara.com/api/v2/aws/acm,sts=https://compute-il-interoplab-01.zadara.com/api/v2/aws/sts"
+awsApiEndpoints: "ec2={{ .Values.endpointUrl }}/api/v2/aws/ec2,elasticloadbalancing={{ .Values.endpointUrl }}/api/v2/aws/elbv2,acm={{ .Values.endpointUrl }}/api/v2/aws/acm,sts={{ .Values.endpointUrl }}/api/v2/aws/sts"
 tolerations:
   - key: ""
     effect: NoSchedule
