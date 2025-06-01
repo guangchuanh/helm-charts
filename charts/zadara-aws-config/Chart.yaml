@@ -1,9 +1,6 @@
 apiVersion: v2
 name: zadara-aws-config
 version: 0.0.1
-# home: "https://github.com/zadarastorage/helm-charts/tree/main/charts/zadara-aws-config"
-# sources:
-#   - "https://github.com/zadarastorage/helm-charts/tree/main/charts/zadara-aws-config"
 home: "https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config"
 sources:
   - "https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config"
