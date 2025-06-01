@@ -2,24 +2,24 @@ apiVersion: v1
 entries:
   cert-manager-clusterissuers:
   - apiVersion: v2
-    created: "2025-06-02T06:45:52.042578+09:00"
-    digest: 9d9f9801be1a01bfe45007374bb9c55b7eec723412f022146d56ee08ea789776
+    created: "2025-06-02T07:06:21.358756+09:00"
+    digest: 5ca31fc295dbea406bf6c0fbd76195ce65d6680be5eeb81611b40412aff547f0
     name: cert-manager-clusterissuers
     urls:
-    - https://guangchuanh.github.io/helm-charts/charts/cert-manager-clusterissuers-0.0.1.tgz
+    - https://guangchuanh.github.io/helm-charts/cert-manager-clusterissuers-0.0.1.tgz
     version: 0.0.1
   k3s-helmchartconfig:
   - apiVersion: v2
-    created: "2025-06-02T06:45:52.043296+09:00"
-    digest: 138515483d2b8cab5fbaf9223b8fdb2dee4a9e45d1c1a2e6917d4e6c5439e497
+    created: "2025-06-02T07:06:21.35895+09:00"
+    digest: 14693d5c640414be7e8f1c4b8c861060d63dfb84257267bcde43622a69664522
     name: k3s-helmchartconfig
     urls:
-    - https://guangchuanh.github.io/helm-charts/charts/k3s-helmchartconfig-0.0.2.tgz
+    - https://guangchuanh.github.io/helm-charts/k3s-helmchartconfig-0.0.2.tgz
     version: 0.0.2
   onyx:
   - apiVersion: v2
     appVersion: v0.24.0
-    created: "2025-06-02T06:45:52.05455+09:00"
+    created: "2025-06-02T07:06:21.367402+09:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -37,7 +37,7 @@ entries:
       version: 0.0.2
     description: Gen-AI Chat for Teams - Think ChatGPT if it had access to your team's
       unique knowledge.
-    digest: df4f3fdfe768196c6acdfb77c00fbe313c9eb45dc895d4542b8d7650ca5c4687
+    digest: 150d18e725bae5720491f3cee490aeb79f69ddd65d41d7d709f2b5b76b20ca8e
     home: https://www.onyx.app/
     maintainers:
     - name: eric-zadara
@@ -47,22 +47,22 @@ entries:
     - https://github.com/guangchuanh/helm-charts/blob/main/charts/onyx
     - https://github.com/onyx-dot-app/onyx
     urls:
-    - https://guangchuanh.github.io/helm-charts/charts/onyx-0.0.13.tgz
+    - https://guangchuanh.github.io/helm-charts/onyx-0.0.13.tgz
     version: 0.0.13
   vespa-ai:
   - apiVersion: v2
-    created: "2025-06-02T06:45:52.05531+09:00"
-    digest: 10623feb0023603a393c284dd8bbc87016fecda151f0e62b270b2d0609cddfc9
+    created: "2025-06-02T07:06:21.367769+09:00"
+    digest: da8492ec6cb8479fb20e88f1be98e5fcc22c3e66e1b72a04e991219310574f8b
     name: vespa-ai
     urls:
-    - https://guangchuanh.github.io/helm-charts/charts/vespa-ai-0.0.2.tgz
+    - https://guangchuanh.github.io/helm-charts/vespa-ai-0.0.2.tgz
     version: 0.0.2
   zadara-aws-config:
   - apiVersion: v2
-    created: "2025-06-02T06:45:52.056353+09:00"
+    created: "2025-06-02T07:06:21.368073+09:00"
     description: Adds ConfigMaps to adapt Kubernetes services from AWS endpoints to
       use zCompute endpoints
-    digest: d533b40018791b0a6fba541bcb912eeb263f01aece37516db8d73db5a2db5975
+    digest: 3f05fbfa1893d7ddfcd4c0048713a4d70c14398603991f6f060ab9be1bd6ebd4
     home: https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config
     maintainers:
     - name: eric-zadara
@@ -71,21 +71,6 @@ entries:
     sources:
     - https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config
     urls:
-    - https://guangchuanh.github.io/helm-charts/charts/zadara-aws-config-0.0.3.tgz
+    - https://guangchuanh.github.io/helm-charts/zadara-aws-config-0.0.3.tgz
     version: 0.0.3
-  - apiVersion: v2
-    created: "2025-06-02T06:45:52.05604+09:00"
-    description: Adds ConfigMaps to adapt Kubernetes services from AWS endpoints to
-      use zCompute endpoints
-    digest: a5487f4a3a2e6ab6121fae4d52585ce5bde70da4e5340231bd39a69ffba3a087
-    home: https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config
-    maintainers:
-    - name: eric-zadara
-      url: https://github.com/eric-zadara
-    name: zadara-aws-config
-    sources:
-    - https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config
-    urls:
-    - https://guangchuanh.github.io/helm-charts/charts/zadara-aws-config-0.0.1.tgz
-    version: 0.0.1
-generated: "2025-06-02T06:45:52.04151+09:00"
+generated: "2025-06-02T07:06:21.358372+09:00"
