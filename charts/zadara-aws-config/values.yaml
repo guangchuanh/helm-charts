@@ -20,3 +20,9 @@ serviceOverrides:
   # -- elasticloadbalancing-specific configurations, overrides anything from `default`
   elasticloadbalancing:
     Url: "{{ .Values.endpointUrl }}/api/v2/aws/elbv2"
+
+  acm:
+    Url: "{{ .Values.endpointUrl }}/api/v2/aws/acm"
+
+  sts:
+    Url: "{{ .Values.endpointUrl }}/api/v2/aws/sts"
