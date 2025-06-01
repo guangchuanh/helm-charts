@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   cert-manager-clusterissuers:
   - apiVersion: v2
-    created: "2025-06-02T08:26:33.295266+09:00"
+    created: "2025-06-02T08:54:46.898265+09:00"
     digest: 52d87d0293d0381c06cd693aab86247ea511f74a23173e86bd01a081df3dfc73
     name: cert-manager-clusterissuers
     urls:
@@ -10,7 +10,7 @@ entries:
     version: 0.0.1
   k3s-helmchartconfig:
   - apiVersion: v2
-    created: "2025-06-02T08:26:33.295448+09:00"
+    created: "2025-06-02T08:54:46.898448+09:00"
     digest: f56339f1cd6ff26ce9139d9c1a8430dc07eaa98b53d4eb490e538c22e1713129
     name: k3s-helmchartconfig
     urls:
@@ -19,7 +19,7 @@ entries:
   onyx:
   - apiVersion: v2
     appVersion: v0.24.0
-    created: "2025-06-02T08:26:33.303655+09:00"
+    created: "2025-06-02T08:54:46.906934+09:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -51,7 +51,7 @@ entries:
     version: 0.0.13
   vespa-ai:
   - apiVersion: v2
-    created: "2025-06-02T08:26:33.304021+09:00"
+    created: "2025-06-02T08:54:46.90729+09:00"
     digest: 02c45705578c45324b2ee374dc1a11f2dc2cea996e94f48c508d384c7febaca5
     name: vespa-ai
     urls:
@@ -59,10 +59,10 @@ entries:
     version: 0.0.2
   zadara-aws-config:
   - apiVersion: v2
-    created: "2025-06-02T08:26:33.304312+09:00"
+    created: "2025-06-02T08:54:46.907597+09:00"
     description: Adds ConfigMaps to adapt Kubernetes services from AWS endpoints to
       use zCompute endpoints
-    digest: fca97e4219d333fe3a7512cb24ed1138c5a419d6137df62e66b19b156df14e10
+    digest: fe8bd9ad9359dcc2663f9bfb1845f2f08a35f01b0a32f1e19d98e7ff39c7d30b
     home: https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config
     maintainers:
     - name: eric-zadara
@@ -73,4 +73,4 @@ entries:
     urls:
     - https://guangchuanh.github.io/helm-charts/zadara-aws-config-0.0.3.tgz
     version: 0.0.3
-generated: "2025-06-02T08:26:33.294901+09:00"
+generated: "2025-06-02T08:54:46.897918+09:00"
