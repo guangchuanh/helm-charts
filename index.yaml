@@ -2,24 +2,24 @@ apiVersion: v1
 entries:
   cert-manager-clusterissuers:
   - apiVersion: v2
-    created: "2025-06-02T07:06:21.358756+09:00"
+    created: "2025-06-02T07:19:09.41907+09:00"
     digest: 5ca31fc295dbea406bf6c0fbd76195ce65d6680be5eeb81611b40412aff547f0
     name: cert-manager-clusterissuers
     urls:
-    - https://guangchuanh.github.io/helm-charts/cert-manager-clusterissuers-0.0.1.tgz
+    - https://guangchuanh.github.io/helm-charts/helm_charts/charts/cert-manager-clusterissuers-0.0.1.tgz
     version: 0.0.1
   k3s-helmchartconfig:
   - apiVersion: v2
-    created: "2025-06-02T07:06:21.35895+09:00"
+    created: "2025-06-02T07:19:09.419272+09:00"
     digest: 14693d5c640414be7e8f1c4b8c861060d63dfb84257267bcde43622a69664522
     name: k3s-helmchartconfig
     urls:
-    - https://guangchuanh.github.io/helm-charts/k3s-helmchartconfig-0.0.2.tgz
+    - https://guangchuanh.github.io/helm-charts/helm_charts/charts/k3s-helmchartconfig-0.0.2.tgz
     version: 0.0.2
   onyx:
   - apiVersion: v2
     appVersion: v0.24.0
-    created: "2025-06-02T07:06:21.367402+09:00"
+    created: "2025-06-02T07:19:09.428994+09:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -47,19 +47,19 @@ entries:
     - https://github.com/guangchuanh/helm-charts/blob/main/charts/onyx
     - https://github.com/onyx-dot-app/onyx
     urls:
-    - https://guangchuanh.github.io/helm-charts/onyx-0.0.13.tgz
+    - https://guangchuanh.github.io/helm-charts/helm_charts/charts/onyx-0.0.13.tgz
     version: 0.0.13
   vespa-ai:
   - apiVersion: v2
-    created: "2025-06-02T07:06:21.367769+09:00"
+    created: "2025-06-02T07:19:09.430063+09:00"
     digest: da8492ec6cb8479fb20e88f1be98e5fcc22c3e66e1b72a04e991219310574f8b
     name: vespa-ai
     urls:
-    - https://guangchuanh.github.io/helm-charts/vespa-ai-0.0.2.tgz
+    - https://guangchuanh.github.io/helm-charts/helm_charts/charts/vespa-ai-0.0.2.tgz
     version: 0.0.2
   zadara-aws-config:
   - apiVersion: v2
-    created: "2025-06-02T07:06:21.368073+09:00"
+    created: "2025-06-02T07:19:09.430428+09:00"
     description: Adds ConfigMaps to adapt Kubernetes services from AWS endpoints to
       use zCompute endpoints
     digest: 3f05fbfa1893d7ddfcd4c0048713a4d70c14398603991f6f060ab9be1bd6ebd4
@@ -71,6 +71,6 @@ entries:
     sources:
     - https://github.com/guangchuanh/helm-charts/tree/main/charts/zadara-aws-config
     urls:
-    - https://guangchuanh.github.io/helm-charts/zadara-aws-config-0.0.3.tgz
+    - https://guangchuanh.github.io/helm-charts/helm_charts/charts/zadara-aws-config-0.0.3.tgz
     version: 0.0.3
-generated: "2025-06-02T07:06:21.358372+09:00"
+generated: "2025-06-02T07:19:09.418668+09:00"
