@@ -220,7 +220,7 @@ vespa:
         var:
           path: '/opt/vespa/var'
           size: 50Gi
-          className: gp2
+          className: gp3
           accessModes: ["ReadWriteOnce"]
       # -- Resource configuration for a single-replica statefulset
       # @section -- Vespa-ai Embedding Database
@@ -240,7 +240,7 @@ vespa:
         var:
           path: '/opt/vespa/var'
           size: 20Gi
-          className: gp2
+          className: gp3
           accessModes: ["ReadWriteOnce"]
       # -- Resource configuration for "cfg" statefulset
       # @section -- Vespa-ai Embedding Database
@@ -262,7 +262,7 @@ vespa:
         var:
           path: '/opt/vespa/var'
           size: 60Gi
-          className: gp2
+          className: gp3
       # -- Resource configuration for "cfg" statefulset
       # @section -- Vespa-ai Embedding Database
       resources:
