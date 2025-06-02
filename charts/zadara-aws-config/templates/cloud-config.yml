@@ -25,6 +25,7 @@ data:
     Region=us-east-1
     SigningRegion=us-east-1
     URL="{{ .Values.endpointUrl }}/api/v2/aws/elbv2"
+
 #    Zone={{ tpl (default $.Values.default.region $.Values.global.region) $ }}
 #{{- range $svc, $cfg := $.Values.serviceOverrides }}
 #
